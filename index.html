@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Website</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f4f4;
+    }
+
+    header {
+      background: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background: #555;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* GRID LAYOUT */
+    .container {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .main {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .sidebar {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+
+    /* MEDIA QUERY (Responsive Design) */
+    @media (max-width: 768px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>My Personal Website</h1>
+    <p>Welcome to my profile</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Gallery</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="container">
+
+    <div class="main">
+      <h2>About Me</h2>
+      <p>Hello! I'm a student who loves web design and coding. This is my personal website created using CSS Grid and Media Queries.</p>
+
+      <h2>My Gallery</h2>
+      <div class="gallery">
+        <img src="https://via.placeholder.com/150" alt="img1">
+        <img src="https://via.placeholder.com/150" alt="img2">
+        <img src="https://via.placeholder.com/150" alt="img3">
+        <img src="https://via.placeholder.com/150" alt="img4">
+        <img src="https://via.placeholder.com/150" alt="img5">
+        <img src="https://via.placeholder.com/150" alt="img6">
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <h2>Profile</h2>
+      <p><strong>Name:</strong> April D. Abas</p>
+      <p><strong>Age:</strong> 22</p>
+      <p><strong>Hobbies:</strong> Painting, Music. </p>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>© 2026 My Personal Website</p>
+  </footer>
+
+</body>
+</html>
